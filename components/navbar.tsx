@@ -31,7 +31,9 @@ export default function LandingNavbar({ lang }: { lang: Locale }) {
               </Link>  
             </nav>
           </div>
-          <LangSwitcher lang={lang} />
+          <div className="hidden md:flex">
+            <LangSwitcher lang={lang} />
+          </div>
         </div>
       </div>
     </div>
