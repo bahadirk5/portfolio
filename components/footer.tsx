@@ -16,7 +16,7 @@ export const LandingFooter = () => {
             </p>
             <div className="flex items-center space-x-2">
               <Link
-                href="https://twitter.com/hqasmei"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-md p-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
@@ -35,7 +35,7 @@ export const LandingFooter = () => {
               </Link>
               <div className="h-8 border-l border-gray-200"></div>
               <Link
-                href="https://github.com/hqasmei/site-muse"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-md p-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
@@ -54,7 +54,7 @@ export const LandingFooter = () => {
               </Link>
               <div className="h-8 border-l border-gray-200"></div>
               <Link
-                href="https://www.linkedin.com/in/hosnaqasmei/"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-md p-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
