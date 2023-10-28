@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkında"
+  },
+  "page": {
+    "home": {
+      "title": "Bütün paranızı bana verin",
+      "description": "Internationalization in NextJs 13 App router"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "This is the about page"
+    }
+  }
+}
