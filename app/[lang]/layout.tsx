@@ -8,7 +8,7 @@ import LandingNavbarMobile from "@/components/navbar-mobile"
 import { LandingFooter } from "@/components/footer"
 import { Locale, i18n } from "@/i18n.config"
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });

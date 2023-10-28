@@ -11,8 +11,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Image from "next/image"
+import { Locale } from "@/i18n.config"
 
-export function LangSwitcher({ lang }: {lang: string}) {
+export function LangSwitcher({ lang }: {lang: Locale}) {
   const router = useRouter()
   return (
     <DropdownMenu>

@@ -6,8 +6,9 @@ import Link from "next/link"
 import { LangSwitcher } from "@/components/lang-switcher"
 import { cn } from "@/lib/utils"
 import useScroll from "@/hooks/use-scroll"
+import { Locale } from "@/i18n.config"
 
-export default function LandingNavbar({ lang }: { lang: string }) {
+export default function LandingNavbar({ lang }: { lang: Locale }) {
   const scrolled = useScroll(80);
   return (
       <div className={cn(`sticky inset-x-0 top-0 z-30 w-full transition-all`, {
