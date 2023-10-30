@@ -17,7 +17,7 @@ export default async function Home({
         <div className="w-full max-w-screen-xl px-2.5 md:px-20 pb-28 pt-28 flex flex-col items-center justify-center text-center sm:pt-40 ">
           <Link
             href="/"
-            className="rounded-2xl bg-blue-100 px-4 py-1.5 text-sm font-medium"
+            className="rounded-2xl bg-blue-100 px-4 py-1.5 text-sm font-medium mb-3"
             target="_blank"
           >
             Follow along on Twitter
@@ -34,21 +34,21 @@ export default async function Home({
             <Button asChild className="group p-5 mt-5">
               <Link href="/">
                 Contact
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="ml-2 h-5 w-5 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-2 h-5 w-5 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
               </Link>
             </Button>
           </div>

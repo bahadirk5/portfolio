@@ -16,7 +16,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Webhook } from "lucide-react"
+import { Mail, Webhook } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function LandingNavbar({ lang }: { lang: Locale }) {
   const scrolled = useScroll(80);
@@ -49,7 +50,7 @@ export default function LandingNavbar({ lang }: { lang: Locale }) {
                           <li className="row-span-3">
                             <NavigationMenuLink asChild>
                               <a
-                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-sky-100 to-slate-200 no-underline outline-none focus:shadow-md p-2"
                                 href="/"
                               >
                                 <Webhook className="h-6 w-6" />
@@ -86,8 +87,14 @@ export default function LandingNavbar({ lang }: { lang: Locale }) {
                 </NavigationMenu>
             </nav>
           </div>
-          <div className="hidden md:flex">
+          <div className="hidden md:flex gap-4 items-center">
             <LangSwitcher lang={lang} />
+            <Button variant="ghost" className="group" asChild>
+              <Link href="/">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
