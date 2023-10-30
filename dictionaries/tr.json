@@ -5,7 +5,7 @@
   },
   "page": {
     "home": {
-      "title": "Bütün paranızı bana verin",
+      "title": "An example app built using Next.js 13 server components.",
       "description": "Internationalization in NextJs 13 App router"
     },
     "about": {

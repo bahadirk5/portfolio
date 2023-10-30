@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Locale } from "@/i18n.config"
 import { getDictionary } from "@/lib/dictionary";
+import { Button } from "@/components/ui/button";
 
 export default async function Home({
   params: { lang },
@@ -12,25 +13,27 @@ export default async function Home({
   return (
     <>
       <div className="mx-auto  h-full w-full flex items-center justify-center text-center relative">
-        {/* <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div>
-        </div> */}
         <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px]"></div>
         <div className="w-full max-w-screen-xl px-2.5 md:px-20 pb-28 pt-28 flex flex-col items-center justify-center text-center sm:pt-40 ">
+          <Link
+            href="/"
+            className="rounded-2xl bg-blue-100 px-4 py-1.5 text-sm font-medium"
+            target="_blank"
+          >
+            Follow along on Twitter
+          </Link>
           <h1 className="scroll-m-20 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
             {page.home.title}
           </h1>
-          <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 mt-5">
             Effortlessly curate, collaborate, and craft with a cutting-edge
             platform that seamlessly organizes your web design research and
             inspiration.
           </p>
           <div className="mt-2 flex items-center gap-6">
-            <Link
-              href="/"
-              className="group active:scale-95 inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-11 px-8 mt-5"
-            >
-              Contact
+            <Button asChild className="group p-5 mt-5">
+              <Link href="/">
+                Contact
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -46,7 +49,8 @@ export default async function Home({
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           <div>
